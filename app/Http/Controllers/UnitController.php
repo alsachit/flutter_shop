@@ -12,7 +12,10 @@ class UnitController extends Controller
 
     public function index() {
         $units = Unit::paginate(env('PAGINATION_COUNT'));
-        return view('admin.units.units')->with(['units' => $units]);
+        return view('admin.units.units')->with([
+            'units' => $units,
+            'showLinks' => true
+        ]);
     }
 
     private function isUnitNameExists($unitName) {
@@ -99,6 +102,27 @@ class UnitController extends Controller
 
         return redirect()->back()->with('message', 'Unit '. $unit->unit_name . ' has been updated');
 
+    }
+
+    public function search(Request $request) {
+        $request->validate([
+            'unit_search' => 'required'
+        ]);
+
+        $searchTerm = $request->input('unit_search');
+
+        $units = Unit::where(
+            'unit_name', 'LIKE', '%'. $searchTerm . '%'
+        )->orWhere('unit_code', 'LIKE', '%' . $searchTerm . '%')->get();
+
+
+        if (count($units) > 0) {
+            return view('admin.units.units')->with([
+                'units' => $units,
+                'showLinks' => false
+            ]);
+        }
+        return redirect()->back()->with('warning', 'Nothing found');
     }
 
 

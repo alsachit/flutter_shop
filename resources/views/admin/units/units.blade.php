@@ -10,10 +10,25 @@
                     <div class="card-header">{{ __('Units') }}</div>
 
                     <div class="card-body">
+                        <form action="{{ route('search-units') }}" method="post">
+                            @csrf
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h4>Search Unit</h4>
+                                </div>
+                                    <div class="form-group col-md-6">
+                                            <input type="search" name="unit_search" class="form-control" placeholder="Search units" required>
+                                    </div>
+                                <div class="form-group col-md-6">
+                                    <button type="submit" class="btn btn-light">Search</button>
+                                </div>
+
+                            </div>
+                        </form>
                             <form action="{{ route('units') }}" method="post">
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <h3>Add Unit</h3>
+                                        <h4>Add Unit</h4>
                                     </div>
                                 @csrf
                                     <div class="col-md-6">
@@ -54,7 +69,7 @@
                                 </div>
                         @endforeach
                         </div>
-                        {{ $units->links() }}
+                        {{ (!is_null($showLinks) && $showLinks) ? $units->links() : '' }}
                     </div>
                 </div>
             </div>
@@ -186,5 +201,10 @@
         toastr.error("{!! \Illuminate\Support\Facades\Session::get('error') !!}");
     </script>
 @endif
+    @if(\Illuminate\Support\Facades\Session::has('warning'))
+        <script>
+            toastr.warning("{!! \Illuminate\Support\Facades\Session::get('warning') !!}");
+        </script>
+    @endif
 
 @endsection
