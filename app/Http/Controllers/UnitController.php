@@ -6,6 +6,7 @@ use App\Unit;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 
+
 class UnitController extends Controller
 {
 
@@ -14,11 +15,44 @@ class UnitController extends Controller
         return view('admin.units.units')->with(['units' => $units]);
     }
 
+    private function isUnitNameExists($unitName) {
+        $unit = Unit::where(
+            'unit_name', '=', $unitName
+        )->first();
+        if ($unit) {
+            Session::flash('error', 'Unit name ('. $unitName .') is already exists');
+            return false;
+        }
+        return true;
+    }
+
+    private function isUnitCodeExists($unitCode) {
+        $unit = Unit::where(
+            'unit_code', '=', $unitCode
+        )->first();
+        if ($unit) {
+            Session::flash('error', 'Unit code ('. $unitCode .') is already exists');
+            return false;
+        }
+        return true;
+    }
+
     public function store(Request $request) {
         $request->validate([
             'unit_name' => 'required',
             'unit_code' => 'required'
         ]);
+
+        $unitName = $request->input('unit_name');
+        $unitCode = $request->input('unit_code');
+
+        if (!$this->isUnitNameExists($unitName)) {
+            return redirect()->back();
+        }
+
+        if (!$this->isUnitCodeExists($unitCode)) {
+            return redirect()->back();
+        }
 
         $unit = new Unit();
 
@@ -45,6 +79,17 @@ class UnitController extends Controller
             'unit_code' => 'required',
             'unit_id' => 'required'
         ]);
+
+        $unitName = $request->input('unit_name');
+        $unitCode = $request->input('unit_code');
+
+        if (!$this->isUnitNameExists($unitName)) {
+            return redirect()->back();
+        }
+
+        if (!$this->isUnitCodeExists($unitCode)) {
+            return redirect()->back();
+        }
 
         $unitID = intval($request->input('unit_id'));
         $unit = Unit::find($unitID);
