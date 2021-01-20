@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="87a265d0-3843-4920-9518-7206683052dd" name="Default Changelist" comment="" />
+    <list default="true" id="87a265d0-3843-4920-9518-7206683052dd" name="Default Changelist" comment="initial project setup">
+      <change beforePath="$PROJECT_DIR$/.idea/general-shop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/general-shop.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UnitController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UnitController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/app.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/units/units.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/units/units.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -121,12 +135,15 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1n0K79sEFRqZtEh3NxQ4ZB69M6G" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -172,14 +189,31 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1610521425406</updated>
-      <workItem from="1610521437700" duration="82137000" />
+      <workItem from="1610521437700" duration="128382000" />
     </task>
+    <task id="LOCAL-00001" summary="initial project setup">
+      <created>1610913938281</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1610913938281</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="initial project setup" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial project setup" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="309" y="62" key="#Inspections" timestamp="1611055808705">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="309" y="62" key="#Inspections/0.0.1366.768@0.0.1366.768" timestamp="1611055808705" />
     <state x="413" y="138" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1610887344349">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -216,6 +250,14 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="184" y="28" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1610521495825" />
+    <state x="275" y="116" key="Vcs.Push.Dialog.v2" timestamp="1610913966810">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="275" y="116" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1610913966810" />
+    <state x="484" y="290" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1610913512041">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="484" y="290" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1366.768@0.0.1366.768" timestamp="1610913512041" />
     <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1610884180802">
       <screen x="0" y="0" width="1366" height="768" />
     </state>

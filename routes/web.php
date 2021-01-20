@@ -26,6 +26,9 @@ Route::middleware(['auth', 'user_is_admin'])->group( function (){
 
     //Units
     Route::get('units', 'UnitController@index')->name('units');
+    Route::post('units' , 'UnitController@store');
+    Route::delete('units', 'UnitController@delete');
+    Route::put('units', 'UnitController@update');
 
     //Categories
     Route::get('categories', 'CategoryController@index')->name('categories');

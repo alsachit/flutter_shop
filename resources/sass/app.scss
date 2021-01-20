@@ -6,5 +6,24 @@
 
 // Bootstrap
 @import "~bootstrap/scss/bootstrap";
+.btn-span{
+    position: absolute;
+    right: 15px;
+   bottom: 5px;
+}
 
+.btn-span span:last-child {
+    margin-left: 10px;
+}
 
+.btn-span span:first-child a {
+    color: #e54949;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.btn-span span:last-child a {
+    color: #3db73d;
+    font-size: 1.2em;
+    cursor: pointer;
+}
