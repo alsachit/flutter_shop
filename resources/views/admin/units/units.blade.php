@@ -10,7 +10,7 @@
                     <div class="card-header">{{ __('Units') }}</div>
 
                     <div class="card-body">
-                        <form action="{{ route('search-units') }}" method="post">
+                        <form action="{{ route('search-units') }}" role="search" method="get">
                             @csrf
                             <div class="row">
                                 <div class="col-md-12">

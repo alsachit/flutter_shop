@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="87a265d0-3843-4920-9518-7206683052dd" name="Default Changelist" comment="add unit validation">
+    <list default="true" id="87a265d0-3843-4920-9518-7206683052dd" name="Default Changelist" comment="add unit search">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UnitController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UnitController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TagController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TagController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/tags/tags.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/tags/tags.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/units/units.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/units/units.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -190,7 +191,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1610521425406</updated>
-      <workItem from="1610521437700" duration="137959000" />
+      <workItem from="1610521437700" duration="147883000" />
     </task>
     <task id="LOCAL-00001" summary="initial project setup">
       <created>1610913938281</created>
@@ -213,7 +214,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611125419766</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add unit search">
+      <created>1611132121401</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1611132121401</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,17 +234,18 @@
     <MESSAGE value="initial project setup" />
     <MESSAGE value="add insert update delete unit" />
     <MESSAGE value="add unit validation" />
-    <option name="LAST_COMMIT_MESSAGE" value="add unit validation" />
+    <MESSAGE value="add unit search" />
+    <option name="LAST_COMMIT_MESSAGE" value="add unit search" />
   </component>
   <component name="WindowStateProjectService">
     <state x="309" y="62" key="#Inspections" timestamp="1611055808705">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="309" y="62" key="#Inspections/0.0.1366.768@0.0.1366.768" timestamp="1611055808705" />
-    <state x="413" y="138" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1610887344349">
+    <state x="413" y="138" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1611144323005">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="413" y="138" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.768@0.0.1366.768" timestamp="1610887344349" />
+    <state x="413" y="138" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.768@0.0.1366.768" timestamp="1611144323005" />
     <state x="352" y="162" key="EditFileWatcherDialog" timestamp="1610880270815">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -285,9 +294,9 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="484" y="290" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1366.768@0.0.1366.768" timestamp="1610913512041" />
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1610884180802">
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1611137636190">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1610884180802" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1611137636190" />
   </component>
 </project>
