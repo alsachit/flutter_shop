@@ -21,7 +21,7 @@
                     <div class="card-body">
                         <div class="row">
                             @foreach($products as $product)
-                                <div class="col-md-4 text-center">
+                                <div class="col-md-4">
                                     <div class="alert alert-primary">
                                         <h5>{{ $product->title }}</h5>
                                         <p>Category: {{ (is_object($product->category)) ? $product->category->name : 'No Category' }}</p>
@@ -30,20 +30,19 @@
 
                                         @if(!is_null($product->options))
                                             <h5 class="mt-3">Options:</h5>
-                                        <table class="table table-bordered mt-2">
-                                            <tr>
-                                                <td>Option Name</td>
-                                                <td>Option Value</td>
-                                            </tr>
-                                            @foreach($product->jsonOptions() as $optionKey => $options)
-                                                @foreach($options as $option)
-                                                    <tr>
-                                                        <td>{{ $optionKey }}</td>
-                                                        <td>{{ $option }}</td>
-                                                    </tr>
-                                                @endforeach
+
+                                        <div class="row">
+                                            @foreach($product->jsonOptions() as $key => $valus)
+                                            <div class="form-group col-md-12">
+                                                <label for="{{ $key }}">{{ $key }}</label>
+                                                <select id="{{ $key }}" type="text" name="{{ $key }}" class="form-control">
+                                                    @foreach($valus as $value)
+                                                        <option value="{{ $value }}">{{ $value }}</option>
+                                                    @endforeach
+                                                </select>
+                                            </div>
                                             @endforeach
-                                        </table>
+                                        </div>
                                         @endif
 
                                         <a class="btn btn-success mt-2" href="{{ route('update-product', ['id' => $product->id]) }}">Edit Product</a>
