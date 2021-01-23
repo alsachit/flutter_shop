@@ -25,4 +25,12 @@ use Illuminate\Database\Eloquent\Model;
 class Unit extends Model
 {
     protected $fillable = ['unit_code', 'unit_name'];
+
+    public function product() {
+        return $this->hasMany(Product::class);
+    }
+
+    public function formatted() {
+        return $this->unit_name . ' - ' . $this->unit_code;
+    }
 }

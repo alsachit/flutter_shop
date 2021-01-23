@@ -41,6 +41,14 @@ Route::middleware(['auth', 'user_is_admin'])->group( function (){
     //Products
     Route::get('products', 'ProductController@index')->name('products');
 
+    Route::get('new-product' , 'ProductController@newProduct')->name('new-product');
+    Route::post('new-product' , 'ProductController@store');
+
+    Route::get('update-product/{id?}' , 'ProductController@newProduct')->name('update-product');
+    Route::delete('products/{id} ', 'ProductController@delete');
+    //Route::put('update-product' , 'ProductController@update')->name('update-product');
+    Route::get('search-products' , 'ProductController@search')->name('search-products');
+
     //Tags
     Route::get('tags', 'TagController@index')->name('tags');
     Route::post('tags', 'TagController@store');

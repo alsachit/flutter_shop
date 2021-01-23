@@ -10925,3 +10925,35 @@ a.text-dark:focus {
   cursor: pointer;
 }
 
+.add-btn .btn-primary i.bi.bi-plus {
+  font-size: 1.5rem;
+  line-height: 0;
+}
+
+.add-btn h5 {
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+span.product-header-title {
+  color: #e9605c;
+}
+
+.bi {
+  line-height: 0;
+}
+
+.bi .bi-dash-circle-fill {
+  line-height: 0;
+}
+
+a.option-remove-btn {
+  color: #e9605c;
+  font-size: 1.5rem;
+  position: relative;
+}
+
+a.option-remove-btn i {
+  position: absolute;
+}
+
