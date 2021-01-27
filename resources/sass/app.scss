@@ -62,3 +62,24 @@ a.option-remove-btn {
     }
 }
 
+a.activate-image-upload {
+    display: block;
+}
+
+.image-card-upload .card-body i {
+    font-size: 4rem;
+    color: #636b6f;
+}
+
+ a.remove-image-upload  {
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    font-size:  1.5rem;
+    color: #e9605c;
+    z-index: 1;
+}
+
+input.image-file-upload {
+    display: none;
+}

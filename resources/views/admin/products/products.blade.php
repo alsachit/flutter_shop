@@ -32,11 +32,11 @@
                                             <h5 class="mt-3">Options:</h5>
 
                                         <div class="row">
-                                            @foreach($product->jsonOptions() as $key => $valus)
+                                            @foreach($product->jsonOptions() as $key => $values)
                                             <div class="form-group col-md-12">
                                                 <label for="{{ $key }}">{{ $key }}</label>
                                                 <select id="{{ $key }}" type="text" name="{{ $key }}" class="form-control">
-                                                    @foreach($valus as $value)
+                                                    @foreach($values as $value)
                                                         <option value="{{ $value }}">{{ $value }}</option>
                                                     @endforeach
                                                 </select>
